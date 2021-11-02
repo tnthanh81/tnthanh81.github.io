@@ -1,0 +1,451 @@
+/* Reset CSS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;  
+}
+html{
+    scroll-behavior:smooth;
+    font-family: 'Lato', sans-serif;
+}
+.clear{
+    clear: both;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    /* margin: 10px 0; */
+}
+h2{
+    font-size:30px;
+}
+.text-white {
+    color: #fff !important;
+}
+.text-center {
+    text-align: center !important;
+}
+.col-full {
+    width: 100%;
+}
+.col-half {
+    width:50%;
+}
+.col-third {
+    width: 33.3333%;
+}
+.row {
+     margin-left:-8px;
+     margin-right:-8px;
+}
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.col {
+    float: left;
+    padding-left:8px;
+    padding-right: 8px;
+}
+.mt-8 {
+    margin-top: 8px !important;
+}
+.mt-16 {
+    margin-top: 16px !important;
+}
+#main {
+    position:relative;
+}
+/* .backtoTop {
+    width:40px;
+    height:40px;
+    background-color: rgb(100,100,100);
+    border:none;
+    border-radius:50%;
+    position:absolute;
+    right:20px;
+    bottom:20px;
+} */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index:1;
+    height: 46px;
+    background-color: black;
+
+}
+#nav {
+    display:inline-block;
+}
+#nav, .sub-nav {
+    list-style-type: none;
+}
+#nav > li {
+    display: inline-block;
+}
+#nav li {
+    position:relative;
+}
+#nav > li > a {
+    color:#fff;
+    text-transform: uppercase;
+}
+#nav li a {
+    display:block;
+    text-decoration: none;
+    line-height:46px;
+    padding: 0 24px; 
+}
+#nav li a .nav-arrow-down {
+    font-size:15px;
+}
+#nav li:hover .sub-nav {
+    display:block;
+}
+#nav .sub-nav li:hover a,
+#nav > li:hover > a {
+    background-color:#ccc;
+    color: #000;
+}
+#nav .sub-nav {
+    display: none;
+    min-width:160px;
+    position:absolute;
+    background-color:#fff;
+    box-shadow: 0 0px 10px rgba(0,0,0,0.3);
+}
+#nav .sub-nav a {
+    color: #000;
+    padding: 0 12px;
+    line-height: 38px;
+}
+    
+#header .search-btn{
+   float:right;
+   padding: 0 23px;
+}
+#header .search-btn:hover {
+    background-color: #f44336;
+    cursor:pointer;
+}
+#header .search-icon{
+    color: #fff;
+    font-size:16px;
+    line-height:46px;
+}
+
+#slider {
+  margin-top: 46px;
+  padding-top: 50%;
+  background-image: url(../image/chicago.jpg)   ;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  position:relative;
+}
+#slider .text-content {
+    position:absolute;
+    color: #fff;
+    bottom:47px;
+    width: 100%;
+    text-align: center;
+}
+#slider .text-heading{
+    margin-bottom: 17px;
+    font-size:24px;
+}
+#slider .text-description{
+    font-size:15px;
+    font-weight:700;
+}
+#content {
+
+}
+#content .content-section {
+    width: 800px;
+    padding: 64px 0 112px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .section-heading {
+    font-size:30px;
+    letter-spacing:4px;
+    text-align: center;
+}
+#content .section-sub-heading {
+    margin:17px 0;
+    font-size:15px;
+    text-align: center;
+    font-style:italic;
+    opacity:0.6
+
+}
+#content .content-section .about-text {
+    font-size:15px;
+    text-align:justify;
+    line-height:1.4;
+}
+#content .members-list{
+    margin-top: 47px;
+}
+#content .member-name{
+    margin-bottom: 15px;
+    font-size:15px;
+}
+#content .member-img {
+    /* margin: 0 51px; */
+    width: 154px;
+    border-radius:4px;
+}
+/* Tour section */
+.tour-section{
+    background-color:#000;
+}
+.ticket-lists {
+    background-color:#fff;
+    margin-top: 40px;
+    list-style: none;
+}
+.ticket-lists li {
+    font-size:15px;
+    padding: 11px 16px;
+    line-height:22.5px;
+    border-bottom: 1px solid #ddd;
+    color:#757575;
+}
+.ticket-lists .sold-out {
+    color:#fff;
+    background-color:#f44336;
+    padding: 3px 4px;
+    margin-left: 16px;
+}
+.ticket-lists .quantity {
+    background-color:#000;
+    color: #fff;
+    float:right;
+    width: 24px;
+    height: 24px;
+    border-radius:50%;
+    text-align: center;
+    line-height:24px;
+    margin-top:-2px;
+}
+/* Places */
+.tour-places-list {
+    margin-top: 32px;
+}
+
+.tour-place-img {
+    width: 100%;
+    display:block;
+}
+.tour-place-img:hover {
+    opacity:0.7;
+}
+.tour-place-content{
+    background-color: #fff;
+    padding:16px;
+    font-size:15px;
+}
+.place-heading{
+    font-family:'Lato', sans-serif;
+    font-size:15px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.place-time{
+    margin-bottom: 15px;
+    opacity:0.6;
+}
+.place-description{
+
+    line-height:22.5px
+}
+.place-buy-btn{
+    display:inline-block;
+    padding: 11px 16px;
+    margin-top: 15px;
+    color: #fff;
+    text-align:center;
+    text-decoration:none;
+    border:none;
+    border-radius:2px;
+    background-color: #000
+}
+.place-buy-btn:hover {
+    background-color: #ccc;
+    color: #000;
+}
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    max-width: calc(100% - 32px);
+    background: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+    display:none;
+}
+.modal.open {
+    display:flex;
+}
+.modal-container {
+    background-color: #fff;
+    width: 900px;
+    min-height:200px;
+    position:relative;
+    animation: modalFadeIn ease .4s;
+}
+.modal-close {
+    position: absolute;
+    top: 0;
+    right:0;
+    padding: 12px;
+    color: #fff;
+}
+.modal-close:hover {
+    cursor:pointer;
+    background-color: #ccc;
+    color: #000;
+}
+.modal-header {
+    background-color: #009688;
+    display:flex;
+    height: 129px;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family:"Segoe UI",sans-serif;
+    font-size:30px;
+    letter-spacing:4px;
+}
+.modal-heading-icon {
+    margin-right:16px;
+}
+.modal-body {
+    padding: 16px 16px;
+}
+.modal-label {
+    display: block;;
+    margin-bottom: 12px;
+    font-size: 15px;
+    line-height:1.5;
+}
+.modal-input {
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+}
+#buy-ticket-btn {
+    width:100%;
+    padding: 20px;
+    background-color: #009688;
+    font-size:15px;
+    text-transform: uppercase;
+    color: #fff;
+    border:none;
+}
+#buy-ticket-btn:hover { 
+    background-color: #ccc;
+    color: #000;
+    cursor:pointer;
+}
+.modal-footer {
+    padding: 16px;
+    text-align: right;
+}
+.modal-close-btn {
+    color: #fff;
+    font-size:15px;
+    float: left;
+    padding: 11px 16px;
+    margin-bottom:16px;
+    background-color:#f44336;
+    border:none;
+}
+.modal-close-btn:hover {
+    color: #000;
+    background-color: #ccc;
+    cursor:pointer;
+}
+.modal-footer a {
+    color: #2196f3;
+}
+.modal-help {
+    font-size:15px;
+}
+/* Contact Form */
+.contact-content {
+    margin-top: 48px;
+}
+.contact-info {
+    font-size:18px;
+    line-height:1.5;
+}
+.contact-info p i{
+    width: 30px;
+}
+.contact-form {
+    font-size:15px;
+}
+.contact-form .form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+.contact-form .form-submit-btn {
+    background-color: #000;
+    color: #fff;
+    border:none;
+    padding: 10px 16px;
+    float: right;
+}
+.contact-form .form-submit-btn:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+/* Map */
+.map-section img {
+    width: 100%;
+    filter: grayscale(50%);
+}
+/* Footer section */
+.footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+.footer .social-lists {
+    margin-bottom:16px;
+    font-size:24px;
+}
+.footer .social-lists a {
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+.footer .social-lists a:hover {
+    color: rgba(0, 0, 0, 0.4);
+}
+.footer .copyright {
+    color: rgba(0, 0, 0, 0.6);
+}
+.footer .copyright a {
+    color: rgba(0, 0, 0, 0.6);
+}
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform:translateY(-140px)
+    }
+    to {
+        opacity: 1;
+        transform:translateY(0px)
+    } 
+}
