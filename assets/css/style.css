@@ -166,9 +166,12 @@ h2{
 }
 #content .content-section {
     width: 800px;
+    max-width:100%;
     padding: 64px 0 112px;
     margin-left: auto;
     margin-right: auto;
+    padding-left:16px;
+    padding-right:8px;
 }
 
 #content .section-heading {
@@ -448,4 +451,21 @@ h2{
         opacity: 1;
         transform:translateY(0px)
     } 
+}
+/* 
+    PC >= 1024px
+    Tablet >=740px & < 1024px
+    Mobile < 740px
+ */
+ /* PC */
+@media (min-width: 1024px) {
+
+}
+/* Tablet */
+@media (min-width: 740px) and( max-width: 1024px) {
+
+}
+/* Mobile */
+@media (max-width:740px) {
+
 }
