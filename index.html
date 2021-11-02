@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;1,100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <title>The Band</title>
 </head>
 <body>
@@ -40,6 +41,9 @@
             <!-- Begin search -->
             <div class="search-btn">
                 <i class="search-icon fa fa-search"></i>
+            </div>
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class="mobile-icon fa fa-bars"></i>
             </div>
             <!-- End search -->
         </div>
@@ -212,6 +216,26 @@
        var modal = document.querySelector('.modal');
        var modalContainer = document.querySelector('.modal-container');
        var buyBtns = document.querySelectorAll('.place-buy-btn');
+       var header = document.getElementById('header');
+       var mobileMenu = document.getElementById('mobile-menu');
+       var headerHeight = header.clientHeight;
+    // Đóng/ mở mobile menu
+       mobileMenu.onclick = function() {
+        var isClosed = header.clientHeight === headerHeight;
+        if(isClosed) {
+            header.style.height = 'auto';
+        }
+        else {
+            header.style.height = null;
+        }
+       }
+    //    Tự động đóng khi chọn menu
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+        for (var menuItem of menuItems) {
+            menuItem.onclick = function() {
+                header.style.height = null;
+            }
+        }
        modalClose.onclick = function() {
         modal.classList.remove('open');
     }
