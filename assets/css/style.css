@@ -75,7 +75,6 @@ h2{
     z-index:1;
     height: 46px;
     background-color: black;
-    overflow: hidden;
 }
 #nav {
     display:inline-block;
@@ -122,7 +121,11 @@ h2{
     padding: 0 12px;
     line-height: 38px;
 }
-    
+#header .mobile-menu-btn {
+    position:absolute;
+    top:0;
+    right:0;
+}
 #header .search-btn,
 #header .mobile-menu-btn{
    float:right;
