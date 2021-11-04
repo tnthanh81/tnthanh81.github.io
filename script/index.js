@@ -22,9 +22,10 @@ mobileMenu.onclick = function() {
  for (var menuItem of menuItems) {
      menuItem.onclick = function(e) {
          var isParentMenu = this.nextElementSibling && menuItem.nextElementSibling.classList.contains('suv-nav');
-         if (!isParentMenu) {
+         if (isParentMenu) {
             e.preventDefault();
-         }else {
+         }
+         else {
             header.style.height = null;
          }
      }
