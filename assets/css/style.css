@@ -183,7 +183,7 @@ h2{
     margin-left: auto;
     margin-right: auto;
     padding-left:16px;
-    padding-right:8px;
+    padding-right:16px;
 }
 
 #content .section-heading {
@@ -205,7 +205,7 @@ h2{
     line-height:1.4;
 }
 #content .members-list{
-    margin-top: 47px;
+    margin-top: 32px;
 }
 #content .member-name{
     margin-bottom: 15px;
@@ -251,7 +251,7 @@ h2{
 }
 /* Places */
 .tour-places-list {
-    margin-top: 32px;
+    margin-top: 16px;
 }
 
 .tour-place-img {
