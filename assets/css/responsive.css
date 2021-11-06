@@ -9,7 +9,6 @@
 }
 /* Tablet */
 @media (min-width: 740px) and (max-width: 1024px) {
-
   }
 
 /* Mobile */
@@ -59,9 +58,5 @@
    }
    .contact-form {
        margin-top:16px;
-   }
-   .modal {
-       max-width:100%;
-       padding:8px;
    }
 }
