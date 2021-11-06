@@ -54,6 +54,9 @@ h2{
 .mt-16 {
     margin-top: 16px !important;
 }
+.mt-32 {
+    margin-top: 32px !important;
+}
 #main {
     position:relative;
 }
@@ -289,7 +292,8 @@ h2{
     text-decoration:none;
     border:none;
     border-radius:2px;
-    background-color: #000
+    background-color: #000;
+    text-align:center;
 }
 .place-buy-btn:hover {
     background-color: #ccc;
