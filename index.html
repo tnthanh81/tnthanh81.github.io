@@ -4,159 +4,212 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>F8 Shopee</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="assets/css/base.css">
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <title>The Band</title>
 </head>
 <body>
-    <div class="app">
-        <header class="header">
-            <div class="grid">
-                <nav class="header__navbar">
-                    <ul class="header__navbar-list">
-                        <li class="header__navbar-items header__navbar-items--has-qr header__navbar-items--separate">
-                            Vào cửa hàng trên ứng dụng
-                            <div class="header__qr">
-                                <img class="header__qr-img"src="assets/image/shopeeqr.png" alt="QR">
-                                <div class="header__qr-apps">
-                                   <a href="https://shopee.vn/web" class="header__qr-link">
-                                    <img src="assets/image/apple.png" alt="" class="header__qr-download-img">
-                                   </a>
-                                   <a href="https://shopee.vn/web" class="header__qr-link">
-                                    <img src="assets/image/ggplay.png" alt="" class="header__qr-download-img">
-                                   </a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="header__navbar-items header__navbar-items--separate">
-                            TickID
-                        </li>
-                        <li class="header__navbar-items ">
-                            <span class="header__navbar-title--no-pointer">Kết nối</span>
-                          <a href="" class="header__navbar-icon-link">
-                            <i class="header__navbar-icon fab fa-facebook"></i>
-                          </a>
-                          <a href="" class="header__navbar-icon-link">
-                            <i class="header__navbar-icon fab fa-instagram"></i> 
-                          </a>                            
-                        </li>                      
+   <div id="main">
+       
+       <!-- <a name="top"></a>
+       <a class="backtoTop" href="#top"><i class="fas fa-home"></i></a> -->
+        <!-- Header -->
+        <div id="header">
+            <!-- Begin nav -->
+            <ul id="nav">
+                <li ><a href="#">Home</a></li>
+                <li ><a href="#band">Band</a></li>
+                <li ><a href="#tour">Tour</a></li>
+                <li ><a href="#contact">Contact</a></li>
+                <li>
+                    <a href="#">
+                        More
+                        <i class="nav-arrow-down fas fa-caret-down"></i>
+                    </a>
+                    <ul class="sub-nav">
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
                     </ul>
-                    <ul class="header__navbar-list">
-                       <li class="header__navbar-items header__navbar-items--has-noti">                        
-                        <a href="" class="header__navbar-item-link">
-                            <i class="header__navbar-icon  far fa-bell"></i>
-                            Thông báo
-                        </a>
-                        <div class="header__noti">
-                            <header class="header__noti-header">
-                                <h3>Thông báo mới nhận</h3>
-                            </header>
-                            <ul class="header__noti-list">
-                                <li class="header__noti-item header__noti-item--viewed">
-                                    <a href="" class="header__noti-link">
-                                        <img src="https://cf.shopee.vn/file/cada7f3cc59f8ad289636580a60c23b5" alt="" class="header__noti-img">
-                                        <div class="header__noti-info">
-                                            <span class="header__noti-name">Xác định chính xác nguồn gốc các loại sản phẩm Ohui</span>
-                                            <span class="header__noti-description">Hiden tag là giải pháp xác thực hàng chính hãng bằng công nghệ tiên tiến nhất hiện nay</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="header__noti-item">
-                                    <a href="" class="header__noti-link">
-                                        <img src="https://cf.shopee.vn/file/cada7f3cc59f8ad289636580a60c23b5" alt="" class="header__noti-img">
-                                        <div class="header__noti-info">
-                                            <span class="header__noti-name">Mỹ phẩm Ohui chính hãng</span>
-                                            <span class="header__noti-description">Mô tả mỹ phẩm Ohui chính hãng</span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="header__noti-item">
-                                    <a href="" class="header__noti-link">
-                                        <img src="https://cf.shopee.vn/file/cada7f3cc59f8ad289636580a60c23b5" alt="" class="header__noti-img">
-                                        <div class="header__noti-info">
-                                            <span class="header__noti-name">Mỹ phẩm Ohui chính hãng</span>
-                                            <span class="header__noti-description">Mô tả mỹ phẩm Ohui chính hãng</span>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                            <footer class="header__noti-footer">
-                                <a href="" class="header__noti-footer--btn">Xem tất cả</a>
-                            </footer>
-                        </div>
-                       </li>
-                       <li class="header__navbar-items">
-                        <a href="" class="header__navbar-item-link">
-                            <i class="header__navbar-icon far fa-question-circle"></i>
-                           Trợ giúp
-                        </a>
-                       </li>
-                       <li class="header__navbar-items header__navbar-items--strong header__navbar-items--separate">
-                        <a href="" class="header__navbar-item-link">Đăng ký</a>
-                       </li>
-                       <li class="header__navbar-items header__navbar-items--strong ">
-                        <a href="" class="header__navbar-item-link">Đăng nhập</a>
-                       </li> 
-                    </ul>
-                </nav>
+                </li>
+            </ul>
+            <!-- End nav -->
+            <!-- Begin search -->
+            <div class="search-btn">
+                <i class="search-icon fa fa-search"></i>
             </div>
-        </header>
-        <div class="container">
-
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class="mobile-icon fa fa-bars"></i>
+            </div>
+            <!-- End search -->
         </div>
-        <footer class="footer">
-
-        </footer>
-    </div>
-    <div class="modal">
-        <div class="modal__overlay"></div>
-        <div class="modal__body">
-            <div class="auth-form">
-                <div class="auth-form__container">
-                    <div class="auth-form__header">
-                        <h3 class="auth-form__heading">Đăng ký</h3>
-                        <span class="auth-form__switch-btn">Đăng nhập</span>
-                    </div>
-                    <div class="auth-form__form">
-                        <div class="auth-form__group">
-                            <input class="auth-form__input" type="email" placeholder="Email của bạn"></input>
+        <!-- Slider -->
+            <div id="slider">
+               <div class="text-content">
+                   <h3 class="text-heading">Chicago</h3>
+                   <div class="text-description">Thank you, Chicago - A night we won't forget.</div>
+               </div>
+            </div>
+        <!-- Content -->
+            <div id="content">
+                <!-- About section -->
+                <div id="band" class="content-section">
+                    <h2 class="section-heading">THE BAND</h2>
+                    <p class="section-sub-heading">We love music</p>
+                    <p class="about-text">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <div class="row members-list">
+                        <div class=" s-col-full mt-32 col col-third text-center ">
+                            <p class="member-name">Name</p>
+                            <img class="member-img"src="assets/image/bandmember.jpg" alt="">
                         </div>
-                        <div class="auth-form__group">
-                            <input class="auth-form__input" type="password" placeholder="Mật khẩu"></input>
+                        <div class=" s-col-full mt-32 col col-third text-center">
+                            <p class="member-name">Name</p>
+                            <img class="member-img"src="assets/image/bandmember.jpg" alt="">
                         </div>
-                        <div class="auth-form__group">
-                            <input class="auth-form__input" type="password" placeholder="Nhập lại mật khẩu"></input>
+                        <div class=" s-col-full mt-32 col col-third text-center">
+                            <p class="member-name">Name</p>
+                            <img class="member-img"src="assets/image/bandmember.jpg" alt="">
                         </div>
-                    </div>
-                    <div class="auth-form__aside">
-                        <p class="auth-form__policy-text">Bằng việc đăng kí, bạn đã đồng ý với F8-Shop về 
-                            <a href="" class="auth-form__text-link">Điều khoản dịch vụ</a> &
-                            <a href="" class="auth-form__text-link">Chính sách bảo mật</a>
-                        </p>
-                        
-                    </div>
-                    <div class="auth-form__controls">
-                        <button class="btn btn--normal auth-form__controls-back">TRỞ LẠI</button>
-                        <button class="btn btn--primary">ĐĂNG KÝ</button>
                     </div>
                 </div>
-                <div class="auth-form__footer">
-                    <a href=""class="auth-form__footer--facebook btn btn--size-s btn--width-icon">
-                        <i class="auth-form__footer--icon fa-brands fa-facebook-square"></i>
-                        <span class="auth-form__footer--title">Kết nối với Facebook</span>
-                    </a>
-                    <a href=""class="auth-form__footer--google btn btn--size-s btn--width-icon">
-                        <i class="auth-form__footer--icon fa-brands fa-google"></i>
-                        <span class="auth-form__footer--title">Kết nối với Google</span>
-                    </a>
-                </div>                   
+                <!-- Tour section -->
+                <div id="tour" class="tour-section">
+                    <div class="content-section">
+                        <h2 class="section-heading text-white">TOUR DATES</h2>
+                        <p class="section-sub-heading text-white">Remember to book your tickets!</p>
+                        <ul class="ticket-lists">
+                            <li>September <span class="sold-out">Sold out</span></li>
+                            <li>October <span class="sold-out">Sold out</span></li>
+                            <li>November <span class="quantity">3</span></li>
+                        </ul>
+                        <div class="row tour-places-list">
+                            <div class="col col-third s-col-full mt-16">
+                                <img src="assets/image/newyork.jpg" class="tour-place-img" alt="">
+                                <div class="tour-place-content">
+                                    <h3 class="place-heading">New York</h3>
+                                    <p class="place-time">Fri 27 Nov 2016</p>
+                                    <p class="place-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                    <button class="place-buy-btn s-full-width">Buy Tickets</button>
+                                </div>
+                            </div>
+                            <div class="col col-third s-col-full mt-16">
+                                <img src="assets/image/paris.jpg" class="tour-place-img" alt="">
+                                <div class="tour-place-content">
+                                    <h3 class="place-heading">Paris</h3>
+                                    <p class="place-time">Fri 28 Nov 2016</p>
+                                    <p class="place-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                    <button class="place-buy-btn s-full-width">Buy Tickets</button>
+                                </div>
+                            </div>
+                            <div class="col col-third s-col-full mt-16">
+                                <img src="assets/image/sanfran.jpg" class="tour-place-img" alt="">
+                                <div class="tour-place-content">
+                                    <h3 class="place-heading">San Francisco</h3>
+                                    <p class="place-time">Fri 29 Nov 2016</p>
+                                    <p class="place-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                    <button class="place-buy-btn s-full-width">Buy Tickets</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Contact section -->
+                <div id="contact"class="content-section">
+                    <h2 class="section-heading">CONTACT</h2>
+                    <p class="section-sub-heading">Fan? Drop a note!</p>
+                    <div class="row contact-content">
+                        <div class="col col-half s-col-full contact-info">
+                            <p>
+                                <i class="fa fa-map-marker-alt"></i>
+                                Chicago, US
+                            </p>
+                            <p>
+                                <i class="fa fa-phone"></i>
+                                Phone: <a href="tel:+00 151515">+00 151515</a>
+                            </p>
+                            <p>
+                                <i class="fa fa-envelope"></i>
+                                Email: <a href="mailto:mail@mail.com">mail@mail.com</a>
+                            </p>
+                        </div>
+                        <div class="col col-half s-col-full contact-form">
+                            <form action="">
+                                <div class="row">
+                                    <div class="col col-half s-col-full">
+                                        <input type="text" class="form-control" required id="contact-name"placeholder="Name"> 
+                                    </div>
+                                    <div class="col col-half s-col-full">
+                                        <input type="email" class="form-control s-mt-8" required id="contact-email" placeholder="Email">
+                                    </div>
+                                </div>
+                               <div class="row mt-8">
+                                   <div class="col col-full">
+                                        <input type="text" class="form-control" required id="contact-message" placeholder="Message">
+                                   </div>
+                               </div>
+                                <input class="form-submit-btn mt-16 s-full-width" type="submit" value="SEND"></input>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+            <div class="map-section">
+                <img src="./assets/image/map.jpg" alt="">
+            </div>
+            <div class="footer ">
+                <div class="social-lists">
+                    <a href=""><i class="fab fa-facebook-square"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-snapchat"></i></a>
+                    <a href=""><i class="fab fa-pinterest-p"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                </div>
+                <p class="copyright">Powered by <a href="">w3.css</a></p>
+            </div>
     </div>
+        <!-- Close -->
+        <!-- Footer -->
+   <div class="modal">
+       <div class="modal-container">
+           <div class="modal-close">
+                <i class="fas fa-times"></i>
+           </div>
+           <header class="modal-header">
+               <i class="modal-heading-icon fa fa-suitcase"></i>
+               Tickets
+           </header>
+           <div class="modal-body">
+               <label for="ticket-quantity" class="modal-label">
+                   <i class="fa fa-shopping-cart"></i>
+                   Tickets, $15 per person
+               </label>
+               <input type="text" id="ticket-quantity" class="modal-input" placeholder="How many?">
+
+               <label for="ticket-email" class="modal-label">
+                <i class="fa fa-user"></i>
+                 Send To
+                </label>
+                <input type="mail" id="ticket-email" class="modal-input" placeholder="Enter email">
+
+                <button id="buy-ticket-btn">
+                    pay
+                    <i class="fa fa-check"></i>
+                </button>
+           </div>
+           <footer class="modal-footer">
+               <button class="modal-close-btn">
+                   Close
+                   <i class="fa fa-remove"></i>
+                </button>
+               <p class="modal-help">Need <a href="">help?</a></p>
+           </footer>
+       </div>
+   </div>
+  <script src="script/index.js"></script>
 </body>
 </html>
